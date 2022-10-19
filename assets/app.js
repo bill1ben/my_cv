@@ -14,6 +14,7 @@ import './styles/components/header.css';
 import './styles/sections/home.css';
 import './styles/sections/about.css';
 import './styles/sections/skills.css';
+import './styles/sections/sevices.css';
 import './styles/app.css';
 
 // start the Stimulus application
