@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+    {% include 'components/header.html.twig' %}
+    <main class="main">
+        {% include 'main/sections/home.html.twig' %}
+        {% include 'main/sections/about.html.twig' %}
+        {% include 'main/sections/skills.html.twig' %}
+    </main>
+{% endblock %}
