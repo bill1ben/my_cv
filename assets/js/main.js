@@ -1,4 +1,3 @@
-
 // Header changes on scroll //
 const scrollHeader = () =>{
     const header = document.getElementById('header')
@@ -32,3 +31,25 @@ modalClose.forEach((mb , i) => {
         modal(i)
     })
 })
+
+// WORK SECTION //
+
+import mixitup from 'mixitup';
+
+let mixerPortfolio = mixitup(".work_container", {
+    selectors: {
+        target: '.work_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+const linWork = document.querySelectorAll(".work_item");
+
+function activeWork() {
+    linWork.forEach(l => l.classList.remove("active_work"))
+    this.classList.add("active_work")
+};
+
+linWork.forEach(l => l.addEventListener("click", activeWork));

@@ -33,6 +33,7 @@
 
 .nav_menu {
     position: fixed;
+    left: 5%;
     bottom: 1rem;
     background-color: hsla(var(--second-hue), 32%, 16%, .8);
     width: 90%;
