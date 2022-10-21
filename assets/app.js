@@ -12,6 +12,7 @@ import './styles/base.css';
 import './styles/components/buttons.css';
 import './styles/components/header.css';
 import './styles/components/footer.css';
+import './styles/components/scroll_bar.css';
 import './styles/sections/home.css';
 import './styles/sections/about.css';
 import './styles/sections/skills.css';
