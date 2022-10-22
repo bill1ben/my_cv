@@ -65,6 +65,10 @@
     height: 4rem;
 }
 
+.contact_send_button {
+    margin-left: 2rem;
+}
+
 .contact_form_input {
     position: absolute;
     top: 0;

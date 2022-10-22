@@ -1,12 +1,12 @@
 .foot_logo {
     display: flex;
-    justify-content: center;
     margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
 
 .foot_logo img {
     width: 44px;
-    margin-left: .75rem;
 }
 
 .footer {
