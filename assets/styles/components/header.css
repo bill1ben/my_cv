@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: var(--h2-font-size);
 }
 
 .nav_logo {
@@ -24,7 +25,7 @@
 }
 
 .nav_logo img {
-    width: var(--h3-font-size);
+    width: var(--h2-font-size);
 }
 
 .nav_logo:hover {

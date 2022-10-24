@@ -53,3 +53,31 @@ function activeWork() {
 };
 
 linWork.forEach(l => l.addEventListener("click", activeWork));
+
+// WORK SECTION //
+import ScrollReveal from 'scrollreveal';
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+
+sr.reveal('.home_data')
+sr.reveal('.home_handle', {delay: 700})
+sr.reveal('.home_social, .home_scroll', {delay: 900, origin: "bottom"})
+
+// paralaxx
+
+const home_section = document.getElementById('home')
+const home_img = document.getElementById('home_img')
+
+home_section.addEventListener("mousemove", parallax);
+
+function parallax(event) {
+    const x = (window.innerWidth - event.pageX) / 90;
+    const y = - (window.innerHeight - event.pageY) / 90;
+    home_img.style.left = x + "px";
+    home_img.style.bottom =  y >= 0 ? 0 : y + "px";
+
+}

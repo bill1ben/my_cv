@@ -12,6 +12,7 @@
     background-color: transparent;
     border: 2px solid var(--first-color);
     color: var(--first-color);
+    padding: 0.61rem;
 }
 
 .button:hover {
