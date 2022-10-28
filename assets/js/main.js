@@ -180,7 +180,7 @@ function parallax(event) {
 
    slidesPerView: 2,
         spaceBetween: 15,
-        slidesPerView: "auto",
+        slidesPerView: 2,
         loop: true,
         loopFillGroupWithBlank: false,
         centeredSlides: true,
@@ -194,8 +194,8 @@ function parallax(event) {
           el: ".swiper-pagination",
           clickable: true,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
   });
