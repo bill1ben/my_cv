@@ -70,10 +70,15 @@ img {
     text-align: center;
 }
 
+.section_img_title {
+    width: 75px;
+    display: block;
+    margin: .25rem auto 2rem;
+}
+
 .section_title {
     font-size: var(--h2-font-size);
     color: var(--first-color);
-    margin-bottom: 2rem;
 }
 
 .section_subtitle {

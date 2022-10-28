@@ -38,11 +38,11 @@
         justify-content: center;
     }
 
-    .work_item {
+    .grades_item {
         font-size: var(--small-font-size);
     }
 
-    .work_filters {
+    .grades_filters {
         column-gap: .25rem;
     }
 }
@@ -92,11 +92,11 @@
         padding: 0 3.5rem;
     }
 
-    .work_container{
+    .grades_container{
         justify-content: center;
     }
 
-    .work_img {
+    .grades_img {
         width: 295px;
     }
 
@@ -112,7 +112,7 @@
 }
 
 @media screen and (min-width: 767px) {
-    .work_container {
+    .grades_container {
         grid-template-columns: repeat(2, max-content);
     }
 
@@ -139,8 +139,8 @@
         padding: 6.5rem 0 1rem;
     }
 
-    .section_title {
-        margin-bottom: 3.5rem;
+    .section_img_title {
+        margin: .25rem auto 3.5rem;
     }
 
     .nav {
@@ -211,19 +211,19 @@
        padding: 3rem 2rem 1.5rem;
     }
 
-    .work_container {
+    .grades_container {
       gap: 3rem;
     }
 
-    .work_card {
+    .grades_card {
         padding: 1.25rem;
     }
 
-    .work_img {
+    .grades_img {
       margin-bottom: 1rem;
     }
 
-    .work_title {
+    .grades_title {
         margin-bottom: .5rem;
     }
 

@@ -1,0 +1,109 @@
+.grades_container {
+    padding-top: 1rem;
+}
+
+.grades_filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 2rem;
+}
+
+.grades_item, .grades_item_pg {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: .25rem .75rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+}
+
+.grades_card {
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grades_subtitle {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
+
+.grades_img, .grades_text {
+    border-radius: 1rem;
+    margin-bottom: .7rem;
+}
+
+.grades_text {
+    font-size: 15rem;
+}
+
+.grades_card_sub_text {
+    width: 100%;
+}
+
+.grades_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: .25rem;
+}
+
+.grades_button {
+    width: max-content;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.grades_button:hover .grades_icon {
+    transform: translateX(.25rem);
+}
+
+.grades_icon {
+    font-size: 1rem;
+    transition: .4s;
+}
+
+.mixitup-control-active {
+    background-color: var(--first-color);
+    color: var(--body-color);
+}
+
+.active_grades {
+    background-color: var(--first-color);
+    color: var(--body-color);
+}
+
+.paginate_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+    column-gap: 2rem;
+}
+
+.paginate_container_nb {
+    display: none;
+}
+
+.paginate_container_nb_active {
+    display: flex;
+}
+.page_nb {
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.page_selected {
+    background-color: var(--container-color);
+    color: var(--second-hue);
+}
+
+
+

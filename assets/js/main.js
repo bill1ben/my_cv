@@ -32,29 +32,111 @@ modalClose.forEach((mb , i) => {
     })
 })
 
-// WORK SECTION //
+// grades SECTION //
+// // pagination
+
+const elementsPerPage = 4;
+const paginatNbContainer = document.querySelector('#paginate_container');
+const loadFilter = 'all'
+
+const linkGrades = document.querySelectorAll(".grades_item");
+
+function activegrades() {
+    let paginate_container = document.querySelectorAll(".paginate_container_nb");
+
+    let filterClass = this.dataset.filter.replace('_1', '').replace('.', '')
+
+    linkGrades.forEach(el => {
+        el.classList.remove("active_grades")
+    })
+
+    this.classList.add("active_grades")
+
+
+    paginate_container.forEach(el => {
+        el.classList.remove("paginate_container_nb_active")
+    })
+
+    document.querySelector(".paginatNb-" + filterClass).classList.add("paginate_container_nb_active");
+
+}
+
+linkGrades.forEach((el) => linkGradesFn(el));
+
+function linkGradesFn(el) {
+    let dataFilter = el.dataset.filter;
+    dataFilter = dataFilter.replace('_1', '').replace('.', '')
+    appendPagesNb(dataFilter)
+    el.addEventListener("click", activegrades);
+}
+
+
+function appendPagesNb(className) {
+    let parent = document.createElement("div");
+    parent.classList.add("paginatNb-" + className)
+    parent.classList.add("paginate_container_nb")
+
+
+    if(className == loadFilter){
+        parent.classList.add("paginate_container_nb_active")
+    }
+
+    let maxPg = nbMaxPg(className);
+
+    for(let i = 1 ; i <= maxPg ; i++) {
+        let html = document.createElement("div")
+        html.classList.add("grades_item_pg")
+        html.innerText = i.toString();
+        html.dataset.filter = "." + className + "_" + i;
+        parent.append(html)
+    }
+    paginatNbContainer.appendChild(parent)
+    document.querySelector("#paginate_container").appendChild(parent)
+}
+
+function nbMaxPg(className)
+{
+    let gradesCards  = document.querySelectorAll("." + className)
+    let gradesCardsCount = gradesCards.length;
+
+    addFilteClassgradesCards(gradesCards, className)
+
+    return Math.ceil(gradesCardsCount / elementsPerPage);
+}
+
+
+function addFilteClassgradesCards(gradesCards, className)
+{
+    gradesCards.forEach((el, i) => {
+        let index = i + 1;
+        let classEl = Math.ceil(index / elementsPerPage)
+        el.classList.add(className + "_" + classEl)
+    });
+}
+
+
+
 
 import mixitup from 'mixitup';
 
-let mixerPortfolio = mixitup(".work_container", {
+mixitup(".grades_container", {
     selectors: {
-        target: '.work_card'
+        target: '.grades_card'
     },
     animation: {
         duration: 300
+    },
+    load: {
+        filter: "." + loadFilter + "_1"
     }
 });
 
-const linWork = document.querySelectorAll(".work_item");
 
-function activeWork() {
-    linWork.forEach(l => l.classList.remove("active_work"))
-    this.classList.add("active_work")
-};
 
-linWork.forEach(l => l.addEventListener("click", activeWork));
 
-// WORK SECTION //
+
+
+// Home SECTION //
 import ScrollReveal from 'scrollreveal';
 const sr = ScrollReveal({
     origin: 'top',
@@ -81,3 +163,39 @@ function parallax(event) {
     home_img.style.bottom =  y >= 0 ? 0 : y + "px";
 
 }
+
+// works section
+
+  // core version + navigation, pagination modules:
+  import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+  // import Swiper and modules styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+
+  new Swiper('.works_container', {
+    // Optional parameters
+
+    modules: [Navigation, Pagination, Autoplay],
+
+   slidesPerView: 2,
+        spaceBetween: 15,
+        slidesPerView: "auto",
+        loop: true,
+        loopFillGroupWithBlank: false,
+        centeredSlides: true,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+  });

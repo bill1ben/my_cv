@@ -1,0 +1,30 @@
+.works_container {
+    padding-top: 1rem;
+}
+
+.works_card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works_container {
+    background-color: var(--container-color);
+    border-radius: 1rem;
+  }
+
+.works_img {
+    height: 100%;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--first-color) !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: var(--first-color) !important;
+}
+
+
+
