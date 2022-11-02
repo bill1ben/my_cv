@@ -131,11 +131,6 @@ mixitup(".grades_container", {
     }
 });
 
-
-
-
-
-
 // Home SECTION //
 import ScrollReveal from 'scrollreveal';
 const sr = ScrollReveal({
