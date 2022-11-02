@@ -90,3 +90,42 @@ img {
 .bx {
     display: inline !important;
 }
+
+.landing_animation_page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: var(--z-modal);
+    display: flex;
+    flex-direction: column;
+    animation: landing_animation 1s linear 2s forwards ;
+
+}
+
+.landing_animation{
+    height: 100%;
+    width: 100%;
+}
+
+.landing_animation:nth-child(1) {
+    background-color: var(--container-color);
+    animation: landing_animation 1s linear .2s forwards ;
+
+}
+
+.landing_animation:nth-child(2) {
+    background-color: var(--first-color-alt);
+    animation: landing_animation 1s linear .5s forwards ;
+}
+
+.landing_animation:nth-child(3) {
+    background-color: var(--text-color);
+    animation: landing_animation 1s linear .7s forwards ;
+}
+
+@keyframes landing_animation {
+    from { width : 100%; }
+    to   { width: 0%; }
+  }

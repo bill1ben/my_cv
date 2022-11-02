@@ -142,12 +142,12 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2500,
-    delay: 400,
+    delay: 600,
 })
 
 sr.reveal('.home_data')
-sr.reveal('.home_handle', {delay: 700})
-sr.reveal('.home_social, .home_scroll', {delay: 900, origin: "bottom"})
+sr.reveal('.home_handle', {delay: 900})
+sr.reveal('.home_social, .home_scroll', {delay: 1100, origin: "bottom"})
 
 // paralaxx
 
@@ -199,3 +199,32 @@ function parallax(event) {
         //   prevEl: ".swiper-button-prev",
         // },
   });
+
+
+  let contactSendBtn = document.querySelector('.contact_send_button');
+  contactSendBtn.addEventListener('click', sendHttpR)
+
+  function sendHttpR()
+  {
+
+    let form =document.querySelector("form")
+    var formData = new FormData(form);
+    formData = Object.fromEntries(formData);
+
+    var xhr = new XMLHttpRequest();
+    var url = "";
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            contactSendBtn.textContent = "message sent !!";
+            document.querySelectorAll(".contact_form_input").forEach(e => {
+                e.value = ''
+            })
+        }
+    };
+    var data = JSON.stringify(formData);
+    xhr.send(data);
+  }

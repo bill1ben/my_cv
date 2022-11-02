@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--second-hue), 8%, 26%);
+    background-color: var(--first-color-alt);
     border-radius: .5rem;
 }
 
