@@ -1,44 +1,56 @@
 <header class="header" id="header">
-    <nav class="nav container">
-        <a href="#" class="nav_logo">
-            <span>Bilel</span>
-            <img src="{{ asset('build/images/billCap.png') }}" alt="" class="bill_cap">
-        </a>
+	<nav class="nav">
+		<a href="#" class="nav_logo">
+			<img src="{{ asset('build/images/billCap.png') }}" alt="" class="bill_cap">
+			<span>Bilel</span>
+		</a>
 
-        <div class="nav_menu">
-            <ul class="nav_list">
-                <li class="nav_item">
-                    <a href="#home" class="nav_link active-link">
-                        <i class='bx bx-home-alt'></i>
-                    </a>
-                </li>
+		<div class="nav_menu">
+			<ul class="nav_list">
+				<li class="nav_item">
+					<a href="#home" class="nav_link active-link" data-index="0">
+						<i class='bx bx-home-alt'></i>
+					</a>
+				</li>
 
-                <li class="nav_item">
-                    <a href="#about" class="nav_link">
-                        <i class='bx bx-user'></i>
-                    </a>
-                </li>
+				<li class="nav_item">
+					<a href="#about" class="nav_link" data-index="1">
+						<i class='bx bx-user'></i>
+					</a>
+				</li>
 
-                <li class="nav_item">
-                    <a href="#skills" class="nav_link">
-                        <i class='bx bx-book'></i>
-                    </a>
-                </li>
+				<li class="nav_item">
+					<a href="#skills" class="nav_link" data-index="2">
+						<i class='bx bx-book'></i>
+					</a>
+				</li>
 
-                <li class="nav_item">
-                    <a href="#work" class="nav_link">
-                        <i class='bx bx-briefcase-alt' ></i>
-                    </a>
-                </li>
+				<li class="nav_item">
+					<a href="#services" class="nav_link" data-index="3">
+						<i class='bx bxs-hard-hat'></i>
+					</a>
+				</li>
 
-                <li class="nav_item">
-                    <a href="#contact" class="nav_link">
-                        <i class='bx bx-message-square-detail' ></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+				<li class="nav_item">
+					<a href="#grades" class="nav_link" data-index="4">
+						<i class='bx bxs-graduation'></i>
+					</a>
+				</li>
 
-        <i class='bx bx-moon change-theme' id="theme_btn"></i>
-    </nav>
+				<li class="nav_item">
+					<a href="#works" class="nav_link" data-index="5">
+						<i class='bx bx-briefcase-alt'></i>
+					</a>
+				</li>
+
+				<li class="nav_item">
+					<a href="#contact" class="nav_link" data-index="6">
+						<i class='bx bx-message-square-detail'></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		{# <i class='bx bx-moon change-theme' id="theme_btn"></i> #}
+	</nav>
 </header>

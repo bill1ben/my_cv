@@ -1,12 +1,25 @@
 .skills_container {
-    row-gap: 2rem;
     padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills_content_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skills_content {
     background-color: var(--container-color);
     padding: 1.5rem;
     border-radius: 1.25rem;
+    margin: 0.5rem 0.5rem;
+    height: 20rem;
+    width: 20rem;
 }
 
 .skills_title {

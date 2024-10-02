@@ -1,8 +1,21 @@
 .contact_container {
     row-gap: 3rem;
     padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-flow: wrap-reverse;
 }
 
+.contact_content_media{
+    width: 15rem;
+}
+
+.contact_content_form{
+    width: 80%;
+    position: relative;
+}
 .contact_title {
     text-align: center;
     font-size: var(--h3-font-size);
@@ -66,7 +79,9 @@
 }
 
 .contact_send_button {
-    margin-left: 2rem;
+    margin-right: 2rem;
+    position: absolute;
+    right: 0;
 }
 
 .contact_form_input {

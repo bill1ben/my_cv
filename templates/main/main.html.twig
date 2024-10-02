@@ -3,8 +3,7 @@
 {% block title %}Hello MainController!{% endblock %}
 
 {% block body %}
-    {% include 'components/header.html.twig' %}
-    <main class="main">
+    <main class="main container">
 
     <div class="landing_animation_page">
         <div class="landing_animation"></div>
@@ -15,6 +14,7 @@
 
     </div>
 
+        {% include 'components/header.html.twig' %}
         {% include 'main/sections/home.html.twig' %}
         {% include 'main/sections/about.html.twig' %}
         {% include 'main/sections/skills.html.twig' %}
@@ -23,6 +23,6 @@
         {% include 'main/sections/works.html.twig' %}
         {% include 'main/sections/contact.html.twig' %}
     </main>
-    {% include 'components/footer.html.twig' %}
+    {# {% include 'components/footer.html.twig' %} #}
 
 {% endblock %}

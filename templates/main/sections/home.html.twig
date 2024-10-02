@@ -1,5 +1,5 @@
 <section class="home section" id="home">
-    <div class="home_container container grid">
+    <div class="home_container">
         <div class="home_data">
             <span class="home_greeting">Hello, i'm</span>
             <h1 class="home_name">Bilel Benabderrahmane</h1>
@@ -14,25 +14,29 @@
             </div>
         </div>
 
-        <div class="home_handle">
-            <div id="home_img_background" class="home_img_background">
-                <img id="home_img" src="{{ asset('build/images/perfil.jpg') }}" alt="" class="home_img">
+
+        <div class="home_info_container"> 
+
+            <div class="home_social">
+                <a href="" class="home_social-link">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+
+                <a href="" class="home_social-link">
+                    <i class="bx bxl-github"></i>
+                </a>
             </div>
-        </div>
 
-        <div class="home_social">
-            <a href="" class="home_social-link">
-                <i class="bx bxl-linkedin-square"></i>
+            <div class="home_handle">
+                <div id="home_img_background" class="home_img_background">
+                    <img id="home_img" src="{{ asset('build/images/perfil.jpg') }}" alt="" class="home_img">
+                </div>
+            </div>
+
+            <a href="#" class="home_scroll">
+                <i class="bx bx-mouse home_scroll-icon"></i>
+                <span class="home_scroll-name">Scroll Down</span>
             </a>
-
-            <a href="" class="home_social-link">
-                <i class="bx bxl-github"></i>
-            </a>
         </div>
-
-        <a href="#about" class="home_scroll">
-            <i class="bx bx-mouse home_scroll-icon"></i>
-            <span class="home_scroll-name">Scroll Down</span>
-        </a>
     </div>
 </section>

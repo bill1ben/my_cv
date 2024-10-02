@@ -8,6 +8,8 @@
 .works_container {
     background-color: var(--container-color);
     border-radius: 1rem;
+    width: 100%;
+    margin: 1rem;
   }
 
 .works_img {

@@ -1,14 +1,16 @@
 {
-  "build/app.css": "/build/app.b512884d.css",
-  "build/app.js": "/build/app.feb8b617.js",
-  "build/runtime.js": "/build/runtime.53a95366.js",
-  "build/608.74bf64a2.js": "/build/608.74bf64a2.js",
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors-node_modules_jquery_dist_jquery_js-node_modules_swiper_modules_navigation_navigation_-295062.css": "/build/vendors-node_modules_jquery_dist_jquery_js-node_modules_swiper_modules_navigation_navigation_-295062.css",
+  "build/vendors-node_modules_jquery_dist_jquery_js-node_modules_swiper_modules_navigation_navigation_-295062.js": "/build/vendors-node_modules_jquery_dist_jquery_js-node_modules_swiper_modules_navigation_navigation_-295062.js",
   "build/images/Project_works/cycleau.png": "/build/images/Project_works/cycleau.png",
-  "build/images/Project_works/scedec.png": "/build/images/Project_works/scedec.png",
+  "build/images/Project_works/Scedec.png": "/build/images/Project_works/Scedec.png",
   "build/images/graduation/certificat web design.pdf": "/build/images/graduation/certificat web design.pdf",
   "build/images/Project_works/vonroll-hydro.png": "/build/images/Project_works/vonroll-hydro.png",
-  "build/images/Project_works/moggar.png": "/build/images/Project_works/moggar.png",
+  "build/images/Project_works/Moggar.png": "/build/images/Project_works/Moggar.png",
   "build/images/graduation/certificat web design1.jpg": "/build/images/graduation/certificat web design1.jpg",
+  "build/images/Project_works/bricoFenetre.png": "/build/images/Project_works/bricoFenetre.png",
   "build/images/perfil.jpg": "/build/images/perfil.jpg",
   "build/images/Project_works/portal_cycleau.png": "/build/images/Project_works/portal_cycleau.png",
   "build/images/graduation/dev web web_mobil.jpg": "/build/images/graduation/dev web web_mobil.jpg",
@@ -34,5 +36,7 @@
   "build/images/billEmojiFb/fbavatar_5.png": "/build/images/billEmojiFb/fbavatar_5.png",
   "build/images/billEmojiFb/fbavatar_3.png": "/build/images/billEmojiFb/fbavatar_3.png",
   "build/images/billEmojiFb/fbavatar_7.png": "/build/images/billEmojiFb/fbavatar_7.png",
-  "build/images/billCap.png": "/build/images/billCap.png"
+  "build/images/billCap.png": "/build/images/billCap.png",
+  "build/vendors-node_modules_jquery_dist_jquery_js-node_modules_swiper_modules_navigation_navigation_-7ecd80.css": "/build/vendors-node_modules_jquery_dist_jquery_js-node_modules_swiper_modules_navigation_navigation_-7ecd80.css",
+  "build/vendors-node_modules_jquery_dist_jquery_js-node_modules_swiper_modules_navigation_navigation_-7ecd80.js": "/build/vendors-node_modules_jquery_dist_jquery_js-node_modules_swiper_modules_navigation_navigation_-7ecd80.js"
 }

@@ -1,18 +1,28 @@
 .services_container {
-    grid-template-columns: repeat(2,1fr);
-    gap: 1.5rem;
-    padding-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services_card_container {
+    display: flex;
+    justify-content: center;
 }
 
 .services_card {
     background-color: var(--container-color);
-    padding: 3rem 1.5rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     border-radius: 1rem;
+    width: 17rem;
+    height: 17rem;
+    margin: 1rem;
+    overflow: auto;
 }
 
 .services_title {
     font-size: var(--h3-font-size);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .services_button {
@@ -71,27 +81,27 @@
     margin-bottom: 2rem;
 }
 
-.services_modal_list {
+.services_list {
     display: grid;
     row-gap: .75rem;
 }
 
-.services_modal_item {
+.services_item {
     display: flex;
     align-items: flex-start;
     column-gap: .5rem;
 }
 
-.services_modal_icon {
+.services_icon {
     font-size: 1.5rem;
     color: var(--first-color);
 }
 
-.services_modal_info {
+.services_info {
     font-size: var(--small-font-size);
 }
 
-.services_modal_close {
+.services_close {
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
